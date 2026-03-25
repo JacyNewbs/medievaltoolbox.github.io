@@ -439,7 +439,7 @@ function Calendarium() {
         <div style={{fontSize:"11px",textTransform:"uppercase",letterSpacing:".35em",color:"#7a5c14",marginBottom:"12px",fontWeight:600}}>Medieval Calendar</div>
         <h1 style={{fontSize:"clamp(28px,5vw,42px)",fontWeight:300,color:"#2a1e0e",margin:"0 0 8px",letterSpacing:".02em",lineHeight:1.2}}>Calendarium</h1>
         <p style={{fontFamily:"'Crimson Pro',Georgia,serif",fontSize:"16px",color:"#7a6a4a",margin:0,fontStyle:"italic"}}>{calMode === "ecclesiastical" ? "Feasts, fasts, and saints' days of the English medieval year" : "Law terms, return days, and quarter days"}</p>
-        <p style={{fontFamily:"'Crimson Pro',Georgia,serif",fontSize:"12px",color:"#9a8a6a",margin:"6px 0 0",fontStyle:"italic"}}>Sourced from Cheney & Jones, <em>Handbook of Dates</em> (Cambridge, 2000)</p>
+        <p style={{fontFamily:"'Crimson Pro',Georgia,serif",fontSize:"12px",color:"#9a8a6a",margin:"6px 0 0",fontStyle:"italic"}}>Sourced from Cheney &amp; Jones, <em>Handbook of Dates</em> (Cambridge: Cambridge University Press, 2000)</p>
       </div>
 
       <div style={{maxWidth:680,margin:"0 auto",padding:"28px 16px 60px"}}>
@@ -576,9 +576,9 @@ function Calendarium() {
         <div style={{marginTop:48,paddingTop:24,borderTop:"1px solid #d4c5a0",fontFamily:"'Crimson Pro',Georgia,serif",fontSize:"13px",color:"#9a8a6a",lineHeight:1.8}}>
           <div>The computus uses the Julian algorithm for years up to 1752, and the Gregorian algorithm thereafter.</div>
           {calMode==="ecclesiastical" ? (
-            <div style={{marginTop:6}}>Saints' days follow C.R. Cheney & M. Jones, <em>Handbook of Dates</em> (Cambridge, 2000), pp. 64-92.</div>
+            <div style={{marginTop:6}}>Saints' days follow C.R. Cheney &amp; M. Jones, <em>Handbook of Dates</em> (Cambridge: Cambridge University Press, 2000), 64-92.</div>
           ) : (
-            <div style={{marginTop:6}}>Law terms and return days follow C.R. Cheney & M. Jones, <em>Handbook of Dates</em> (Cambridge, 2000), pp. 98-101.</div>
+            <div style={{marginTop:6}}>Law terms and return days follow C.R. Cheney &amp; M. Jones, <em>Handbook of Dates</em> (Cambridge: Cambridge University Press, 2000), 98-101.</div>
           )}
         </div>
       </div>
