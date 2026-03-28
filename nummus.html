@@ -238,12 +238,18 @@ function Nummus() {
 
         {mode==="calculator" && (
           <div style={{animation:"fi .3s ease"}}>
-            <div style={{fontFamily:"'Crimson Pro',Georgia,serif",fontSize:"14px",color:"#7a6a4a",textAlign:"center",marginBottom:20}}>Add or subtract amounts in pounds, shillings, and pence</div>
-            <div style={{display:"flex",justifyContent:"center",gap:40,marginBottom:12}}>
-              <div className="lbl" style={{width:72,fontWeight:600}}>li.</div>
-              <div className="lbl" style={{width:72,fontWeight:600}}>s.</div>
-              <div className="lbl" style={{width:72,fontWeight:600}}>d.</div>
-              <div style={{width:36}}></div>
+            <div style={{background:"#faf3e3",border:"1px solid #d4c5a0",borderRadius:"3px",padding:"12px 16px",marginBottom:20,fontFamily:"'Crimson Pro',Georgia,serif",fontSize:"14px",color:"#5a4a30",lineHeight:1.6}}>
+              <span style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontWeight:600,color:"#2a1e0e",letterSpacing:".02em"}}>How to use: </span>
+              Enter amounts in pounds (<em>li.</em>), shillings (<em>s.</em>), and pence (<em>d.</em>). Tap the <strong>+</strong> or <strong>&minus;</strong> sign beside each row to set whether it is a receipt or a payment &mdash; useful for working through medieval accounts recorded as running cash-flow summaries. Use <em>+ Add row</em> to build up as many lines as needed. Carrying is handled automatically (12d. = 1s., 20s. = 1li.).
+            </div>
+            <div style={{display:"flex",justifyContent:"center",alignItems:"center",marginBottom:8}}>
+              <div style={{width:44,flexShrink:0}}></div>
+              <div style={{display:"flex",gap:8}}>
+                <div className="lbl" style={{width:72,fontWeight:600,textAlign:"center"}}>li.</div>
+                <div className="lbl" style={{width:72,fontWeight:600,textAlign:"center"}}>s.</div>
+                <div className="lbl" style={{width:72,fontWeight:600,textAlign:"center"}}>d.</div>
+              </div>
+              <div style={{width:30,flexShrink:0}}></div>
             </div>
             {rows.map((row, i) => (
               <div key={i} className="row-wrap">
